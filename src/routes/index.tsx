@@ -167,8 +167,8 @@ function Home() {
       <section className="bg-ink text-cream">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:grid-cols-3 md:px-8">
           {[
-            { n: "120+", l: c.home.statLabel[0] },
-            { n: "4", l: c.home.statLabel[1] },
+            { n: c.home.statValue[0], l: c.home.statLabel[0] },
+            { n: c.home.statValue[1], l: c.home.statLabel[1] },
             { n: c.home.based, l: c.home.statLabel[2] },
           ].map((s, i) => (
             <Reveal key={i} delay={i * 0.1}>
