@@ -55,15 +55,38 @@ function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display mt-4 max-w-4xl text-balance text-6xl leading-[0.9] text-cream md:text-8xl lg:text-9xl"
+            className="font-display mt-4 max-w-5xl text-balance text-6xl leading-[0.9] text-cream md:text-8xl lg:text-9xl"
           >
-            {c.hero.line1}
-            <span className="block italic text-primary">{c.hero.line2}</span>
+            {c.hero.line1}<span className="text-primary">_</span>
+            <span className="mt-2 block text-3xl italic text-primary md:text-5xl">{c.hero.tag}</span>
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.95, duration: 0.8 }}
+            className="mt-6 flex flex-wrap gap-x-5 gap-y-1 text-sm uppercase tracking-[0.3em] text-cream/70"
+          >
+            {c.hero.pillars.map((p) => (
+              <span key={p}>{p}</span>
+            ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.05, duration: 0.8 }}
+            className="font-display mt-6 flex flex-wrap gap-x-4 text-xl italic text-cream md:text-2xl"
+          >
+            {c.hero.statements.map((s) => (
+              <span key={s}>{s}</span>
+            ))}
+          </motion.div>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.8 }}
+            transition={{ delay: 1.15, duration: 0.8 }}
             className="mt-6 max-w-md text-cream/70 md:text-lg"
           >
             {c.hero.sub}
