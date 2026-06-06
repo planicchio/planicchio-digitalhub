@@ -65,17 +65,17 @@ function Contact() {
           <Reveal delay={0.1} className="flex flex-col gap-4">
             <p className="text-sm uppercase tracking-widest text-muted-foreground">{c.contact.or}</p>
             <a
-              href="mailto:hello@planicchio.com"
+              href="mailto:planicchio@gmail.com"
               className="group flex items-center justify-between rounded-3xl border border-border bg-card p-6 transition-colors hover:border-primary"
             >
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-sm">hello@planicchio.com</span>
+                <span className="text-sm">planicchio@gmail.com</span>
               </div>
               <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-transform group-hover:rotate-45" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/planicchio"
               target="_blank"
               rel="noreferrer"
               className="group flex items-center justify-between rounded-3xl border border-border bg-card p-6 transition-colors hover:border-primary"
