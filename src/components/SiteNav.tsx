@@ -40,7 +40,7 @@ export function SiteNav() {
 
         <div className="flex items-center gap-3">
           <div className="flex items-center rounded-full border border-border bg-background/60 p-0.5 text-xs backdrop-blur">
-            {(["en", "it"] as const).map((l) => (
+            {(["en", "it", "pt"] as const).map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
