@@ -88,7 +88,7 @@ function Contact() {
             </a>
             <div className="mt-2 rounded-3xl bg-ink p-6 text-cream">
               <p className="text-sm uppercase tracking-widest text-primary">{c.contact.socials}</p>
-              <p className="font-display mt-2 text-3xl">Italy · 🌍 4 languages</p>
+              <p className="font-display mt-2 text-3xl">Italy · 🌍 5 languages</p>
             </div>
           </Reveal>
         </div>
