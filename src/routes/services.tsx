@@ -2,6 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Pencil } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+import branding from "@/assets/branding.png.asset.json";
+import eventflyer from "@/assets/eventflyer.png.asset.json";
+
+const serviceImages: Record<number, string> = {
+  0: branding.url,
+  3: eventflyer.url,
+};
 
 export const Route = createFileRoute("/services")({
   head: () => ({
