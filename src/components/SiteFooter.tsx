@@ -34,7 +34,7 @@ export function SiteFooter() {
 
         <div className="mt-10 flex gap-3">
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/planicchio"
             target="_blank"
             rel="noreferrer"
             className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-primary hover:text-primary"
@@ -42,7 +42,7 @@ export function SiteFooter() {
             <Instagram className="h-5 w-5" />
           </a>
           <a
-            href="mailto:hello@planicchio.com"
+            href="mailto:planicchio@gmail.com"
             className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-primary hover:text-primary"
           >
             <Mail className="h-5 w-5" />

@@ -46,6 +46,13 @@ function About() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-5 pt-24 md:px-8 md:pt-32">
+        <Reveal className="rounded-[2.5rem] bg-ink px-8 py-14 text-cream md:px-16 md:py-20">
+          <p className="text-xs uppercase tracking-[0.4em] text-primary">{c.about.originTitle}</p>
+          <p className="font-display mt-5 max-w-3xl text-balance text-2xl leading-snug md:text-4xl">{c.about.origin}</p>
+          <p className="mt-6 font-display text-xl italic text-primary md:text-2xl">{c.about.tagline}</p>
+        </Reveal>
+      </section>
       <section className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {c.about.values.map((v, i) => (

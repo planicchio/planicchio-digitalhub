@@ -2,6 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Pencil } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+import branding from "@/assets/branding.png.asset.json";
+import eventflyer from "@/assets/eventflyer.png.asset.json";
+
+const serviceImages: Record<number, string> = {
+  0: branding.url,
+  3: eventflyer.url,
+};
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -36,7 +43,18 @@ function Services() {
                 <span className="text-xs uppercase tracking-widest text-primary">{s.tag}</span>
                 <h2 className="font-display mt-4 text-3xl md:text-4xl">{s.title}</h2>
                 <p className="mt-4 max-w-md text-muted-foreground">{s.desc}</p>
-                <div className="mt-6 aspect-[16/7] w-full rounded-2xl bg-gradient-to-br from-primary/25 via-secondary to-muted transition-transform duration-500 group-hover:scale-[1.02]" />
+                {serviceImages[i] ? (
+                  <div className="mt-6 aspect-[16/7] w-full overflow-hidden rounded-2xl">
+                    <img
+                      src={serviceImages[i]}
+                      alt={s.title}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                    />
+                  </div>
+                ) : (
+                  <div className="mt-6 aspect-[16/7] w-full rounded-2xl bg-gradient-to-br from-primary/25 via-secondary to-muted transition-transform duration-500 group-hover:scale-[1.02]" />
+                )}
                 <Link
                   to="/contact"
                   className="mt-6 inline-flex items-center gap-2 self-start rounded-full bg-foreground px-5 py-2.5 text-sm text-background transition-opacity hover:opacity-90"
