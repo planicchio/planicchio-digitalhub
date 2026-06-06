@@ -53,8 +53,7 @@ function About() {
           <p className="mt-6 font-display text-xl italic text-primary md:text-2xl">{c.about.tagline}</p>
         </Reveal>
       </section>
-
-
+      <section className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {c.about.values.map((v, i) => (
             <Reveal key={v.t} delay={i * 0.08}>
