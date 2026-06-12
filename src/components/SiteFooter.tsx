@@ -1,6 +1,14 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Mail } from "lucide-react";
+import { Instagram, Mail, Youtube, Facebook, Music2, Bookmark } from "lucide-react";
 import { useLang } from "@/lib/i18n";
+
+const footerSocials = [
+  { icon: Instagram, url: "https://instagram.com/planicchio", label: "Instagram" },
+  { icon: Music2, url: "https://tiktok.com/@planicchio", label: "TikTok" },
+  { icon: Bookmark, url: "https://pinterest.com/planicchio", label: "Pinterest" },
+  { icon: Facebook, url: "https://facebook.com/planicchio", label: "Facebook" },
+  { icon: Youtube, url: "https://youtube.com/@planicchio", label: "YouTube" },
+];
 
 export function SiteFooter() {
   const { c } = useLang();
@@ -32,17 +40,22 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-10 flex gap-3">
-          <a
-            href="https://instagram.com/planicchio"
-            target="_blank"
-            rel="noreferrer"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-primary hover:text-primary"
-          >
-            <Instagram className="h-5 w-5" />
-          </a>
+        <div className="mt-10 flex flex-wrap gap-3">
+          {footerSocials.map((s) => (
+            <a
+              key={s.label}
+              href={s.url}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={s.label}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-primary hover:text-primary"
+            >
+              <s.icon className="h-5 w-5" />
+            </a>
+          ))}
           <a
             href="mailto:planicchio@gmail.com"
+            aria-label="Email"
             className="flex h-11 w-11 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-primary hover:text-primary"
           >
             <Mail className="h-5 w-5" />

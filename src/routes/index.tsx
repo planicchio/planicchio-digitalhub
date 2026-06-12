@@ -27,6 +27,8 @@ function Home() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
   const services = c.services.items.slice(0, 6);
+  const exploreLinks = ["/app", "/services", "/portfolio", "/products", "/services", "/services"] as const;
+
 
   return (
     <>
@@ -89,8 +91,9 @@ function Home() {
             transition={{ delay: 1.15, duration: 0.8 }}
             className="mt-6 max-w-md text-cream/70 md:text-lg"
           >
-            {c.hero.sub}
+            {c.hero.desc}
           </motion.p>
+
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -130,7 +133,36 @@ function Home() {
         </div>
       </div>
 
-      {/* SERVICES PREVIEW */}
+      {/* EXPLORE THE UNIVERSE */}
+      <section className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
+        <Reveal>
+          <p className="text-xs uppercase tracking-[0.4em] text-primary">{c.explore.eyebrow}</p>
+          <h2 className="font-display mt-3 max-w-2xl text-balance text-4xl md:text-6xl">{c.explore.title}</h2>
+          <p className="mt-4 max-w-xl text-muted-foreground">{c.explore.sub}</p>
+        </Reveal>
+
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {c.explore.cards.map((card, i) => {
+            const dest = exploreLinks[i] ?? "/services";
+            return (
+              <Reveal key={card.title} delay={i * 0.06}>
+                <Link
+                  to={dest}
+                  className="group flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-7 transition-all hover:-translate-y-1 hover:border-primary"
+                >
+                  <div>
+                    <span className="font-display text-3xl text-primary/40">0{i + 1}</span>
+                    <h3 className="font-display mt-4 text-2xl md:text-3xl">{card.title}</h3>
+                    <p className="mt-3 text-sm text-muted-foreground">{card.desc}</p>
+                  </div>
+                  <ArrowUpRight className="mt-8 h-5 w-5 text-muted-foreground transition-all group-hover:rotate-45 group-hover:text-primary" />
+                </Link>
+              </Reveal>
+            );
+          })}
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
         <Reveal>
           <p className="text-xs uppercase tracking-[0.4em] text-primary">{c.services.eyebrow}</p>

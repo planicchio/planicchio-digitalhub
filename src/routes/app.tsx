@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import { Check, Star } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { Check, Star, ArrowUpRight } from "lucide-react";
+import { useLang, APP_URL } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
 import appShot from "@/assets/app.jpg";
 
@@ -28,7 +28,26 @@ function AppPage() {
           <p className="text-xs uppercase tracking-[0.4em] text-primary">{c.app.eyebrow}</p>
           <h1 className="font-display mt-4 text-balance text-5xl leading-[0.95] md:text-7xl">{c.app.title}</h1>
           <p className="mt-5 max-w-md text-lg text-muted-foreground">{c.app.sub}</p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <a
+              href={APP_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
+            >
+              {c.cta.join}
+              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
+            </a>
+            <a
+              href={APP_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3.5 text-sm transition-colors hover:border-primary hover:text-primary"
+            >
+              {c.cta.visitApp}
+            </a>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {c.app.features.map((f) => (
               <div key={f.t}>
                 <h3 className="font-display text-xl text-primary">{f.t}</h3>
@@ -40,7 +59,7 @@ function AppPage() {
         <Reveal delay={0.1}>
           <motion.img
             src={appShot}
-            alt="Planicchio language app"
+            alt="Planicchio Languages app"
             loading="lazy"
             width={1200}
             height={1400}

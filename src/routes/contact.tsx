@@ -1,8 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Instagram, Mail, ArrowUpRight, Check } from "lucide-react";
+import { Instagram, Mail, ArrowUpRight, Check, Youtube, Facebook, Music2, Bookmark } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+
+const socials = [
+  { name: "Instagram", icon: Instagram, url: "https://instagram.com/planicchio" },
+  { name: "TikTok", icon: Music2, url: "https://tiktok.com/@planicchio" },
+  { name: "Pinterest", icon: Bookmark, url: "https://pinterest.com/planicchio" },
+  { name: "Facebook", icon: Facebook, url: "https://facebook.com/planicchio" },
+  { name: "YouTube", icon: Youtube, url: "https://youtube.com/@planicchio" },
+];
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -74,21 +82,22 @@ function Contact() {
               </div>
               <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-transform group-hover:rotate-45" />
             </a>
-            <a
-              href="https://instagram.com/planicchio"
-              target="_blank"
-              rel="noreferrer"
-              className="group flex items-center justify-between rounded-3xl border border-border bg-card p-6 transition-colors hover:border-primary"
-            >
-              <div className="flex items-center gap-3">
-                <Instagram className="h-5 w-5 text-primary" />
-                <span className="text-sm">@planicchio</span>
-              </div>
-              <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-transform group-hover:rotate-45" />
-            </a>
-            <div className="mt-2 rounded-3xl bg-ink p-6 text-cream">
+            <div className="rounded-3xl bg-ink p-6 text-cream">
               <p className="text-sm uppercase tracking-widest text-primary">{c.contact.socials}</p>
-              <p className="font-display mt-2 text-3xl">Italy · 🌍 5 languages</p>
+              <p className="font-display mt-1 text-2xl">{c.social.handle}</p>
+              <div className="mt-4 grid grid-cols-2 gap-2">
+                {socials.map((s) => (
+                  <a
+                    key={s.name}
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group flex items-center gap-2 rounded-2xl border border-cream/15 px-4 py-3 text-sm transition-colors hover:border-primary hover:text-primary"
+                  >
+                    <s.icon className="h-4 w-4" /> {s.name}
+                  </a>
+                ))}
+              </div>
             </div>
           </Reveal>
         </div>
