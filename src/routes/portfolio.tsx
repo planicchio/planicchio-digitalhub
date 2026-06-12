@@ -1,7 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Play } from "lucide-react";
+import { Play, ArrowUpRight, FileText } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
 
