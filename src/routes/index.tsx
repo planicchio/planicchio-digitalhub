@@ -89,8 +89,9 @@ function Home() {
             transition={{ delay: 1.15, duration: 0.8 }}
             className="mt-6 max-w-md text-cream/70 md:text-lg"
           >
-            {c.hero.sub}
+            {c.hero.desc}
           </motion.p>
+
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}
