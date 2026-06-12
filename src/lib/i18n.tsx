@@ -69,7 +69,7 @@ type Content = {
   footer: { tagline: string; rights: string; made: string };
 };
 
-const exploreCardsBase = ["Languages", "Creative Studio", "UGC & Media", "Digital Goods", "Virtual Assistance", "Event Planning"];
+
 
 const en: Content = {
   nav: { home: "Home", about: "About", services: "Services", portfolio: "Portfolio", app: "Languages", products: "Digital Goods", contact: "Contact" },
