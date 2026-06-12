@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { useLang, LANGS } from "@/lib/i18n";
 
 export function SiteNav() {
   const { c, lang, setLang } = useLang();
