@@ -27,6 +27,8 @@ function Home() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
   const services = c.services.items.slice(0, 6);
+  const exploreLinks = ["/app", "/services", "/portfolio", "/products", "/services", "/services"] as const;
+
 
   return (
     <>
