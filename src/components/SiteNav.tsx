@@ -40,11 +40,11 @@ export function SiteNav() {
 
         <div className="flex items-center gap-3">
           <div className="flex items-center rounded-full border border-border bg-background/60 p-0.5 text-xs backdrop-blur">
-            {(["en", "it", "pt"] as const).map((l) => (
+            {LANGS.map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
-                className={`rounded-full px-2.5 py-1 uppercase transition-colors ${
+                className={`rounded-full px-2 py-1 uppercase transition-colors ${
                   lang === l ? "bg-primary text-primary-foreground" : "text-muted-foreground"
                 }`}
               >
