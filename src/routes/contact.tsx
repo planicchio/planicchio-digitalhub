@@ -1,8 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Instagram, Mail, ArrowUpRight, Check } from "lucide-react";
+import { Instagram, Mail, ArrowUpRight, Check, Youtube, Facebook, Music2, Bookmark } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+
+const socials = [
+  { name: "Instagram", icon: Instagram, url: "https://instagram.com/planicchio" },
+  { name: "TikTok", icon: Music2, url: "https://tiktok.com/@planicchio" },
+  { name: "Pinterest", icon: Bookmark, url: "https://pinterest.com/planicchio" },
+  { name: "Facebook", icon: Facebook, url: "https://facebook.com/planicchio" },
+  { name: "YouTube", icon: Youtube, url: "https://youtube.com/@planicchio" },
+];
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
