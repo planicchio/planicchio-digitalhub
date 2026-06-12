@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import { Check, Star } from "lucide-react";
-import { useLang } from "@/lib/i18n";
+import { Check, Star, ArrowUpRight } from "lucide-react";
+import { useLang, APP_URL } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
 import appShot from "@/assets/app.jpg";
 
