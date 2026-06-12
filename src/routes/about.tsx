@@ -32,13 +32,18 @@ function About() {
         <div className="mt-14 grid gap-10 lg:grid-cols-2">
           <Reveal>
             <div className="overflow-hidden rounded-3xl">
-              <img src={about} alt="Planicchio creative direction" loading="lazy" width={1200} height={1500} className="h-full w-full object-cover" />
+              <img src={about} alt="Ana Júlia Botelho, founder of Planicchio" loading="lazy" width={1200} height={1500} className="h-full w-full object-cover" />
             </div>
           </Reveal>
           <Reveal delay={0.1} className="flex flex-col justify-center gap-6 text-lg text-muted-foreground">
-            <p>{c.about.p1}</p>
-            <p>{c.about.p2}</p>
-            <p>{c.about.p3}</p>
+            <div>
+              <p className="font-display text-3xl text-foreground md:text-4xl">{c.about.greeting}</p>
+              <p className="mt-1 text-base uppercase tracking-widest text-primary">{c.about.founder}</p>
+            </div>
+            {c.about.story.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+            <p className="font-display text-xl italic text-foreground">{c.about.closing}</p>
             <Link to="/services" className="inline-flex items-center gap-2 text-base font-medium text-primary hover:underline">
               {c.cta.discover} <ArrowUpRight className="h-4 w-4" />
             </Link>
