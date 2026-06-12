@@ -1,6 +1,14 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Mail } from "lucide-react";
+import { Instagram, Mail, Youtube, Facebook, Music2, Bookmark } from "lucide-react";
 import { useLang } from "@/lib/i18n";
+
+const footerSocials = [
+  { icon: Instagram, url: "https://instagram.com/planicchio", label: "Instagram" },
+  { icon: Music2, url: "https://tiktok.com/@planicchio", label: "TikTok" },
+  { icon: Bookmark, url: "https://pinterest.com/planicchio", label: "Pinterest" },
+  { icon: Facebook, url: "https://facebook.com/planicchio", label: "Facebook" },
+  { icon: Youtube, url: "https://youtube.com/@planicchio", label: "YouTube" },
+];
 
 export function SiteFooter() {
   const { c } = useLang();
