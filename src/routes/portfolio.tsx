@@ -103,26 +103,17 @@ function Portfolio() {
             ))}
           </Reveal>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Reveal key={i} delay={i * 0.05}>
-                <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-gradient-to-b from-primary/40 to-ink/60">
-                  <span className="absolute bottom-3 left-3 rounded-full bg-cream/15 px-3 py-1 text-xs text-cream backdrop-blur">
-                    {c.cta.comingSoon}
-                  </span>
-                  <Play className="absolute left-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 text-cream/80" />
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          <UgcFeed />
 
-          <Reveal delay={0.1} className="mt-10 flex flex-wrap gap-4">
-            <Link
-              to="/contact"
+          <Reveal delay={0.1} className="mt-12 flex flex-wrap gap-4">
+            <a
+              href={UGC_PORTFOLIO_PDF}
+              target="_blank"
+              rel="noreferrer"
               className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
             >
               <FileText className="h-4 w-4" /> {c.cta.viewPortfolio}
-            </Link>
+            </a>
             <a
               href="https://instagram.com/planicchio"
               target="_blank"
@@ -132,26 +123,6 @@ function Portfolio() {
               {c.cta.watch} <ArrowUpRight className="h-4 w-4" />
             </a>
           </Reveal>
-        </div>
-      </section>
-
-
-      {/* REELS */}
-      <section className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
-        <Reveal>
-          <h2 className="font-display text-4xl md:text-6xl">{c.portfolio.reels}</h2>
-        </Reveal>
-        <div className="mt-8 flex gap-4 overflow-x-auto pb-4">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <Reveal key={i} delay={i * 0.05}>
-              <div className="relative aspect-[9/16] w-44 shrink-0 overflow-hidden rounded-3xl bg-gradient-to-b from-primary/40 to-ink md:w-56">
-                <span className="absolute bottom-3 left-3 rounded-full bg-cream/20 px-3 py-1 text-xs text-cream backdrop-blur">
-                  {c.cta.comingSoon}
-                </span>
-                <Play className="absolute left-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 text-cream/80" />
-              </div>
-            </Reveal>
-          ))}
         </div>
       </section>
     </div>
