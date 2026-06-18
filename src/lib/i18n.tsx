@@ -151,7 +151,7 @@ const en: Content = {
       { title: "Event Planning", desc: "Checklists, timelines, guest organisation and personalised support — I plan the details, you enjoy the moment.", tag: "Events" },
       { title: "Languages Help", desc: "Support in Italian, English, Portuguese, Spanish and French — translations, tips and simple courses.", tag: "Languages" },
       { title: "Digital Stationery", desc: "Planners, templates, icons, menus and PDFs designed to be beautiful, useful and fully personalisable.", tag: "Products" },
-      { title: "Fashion & Creative Direction", desc: "Styling, moodboards and full creative direction — drawing on a background in theatre, dance and fashion.", tag: "Fashion" },
+      { title: "Fashion & Creative Direction", desc: "Styling, moodboards and full creative direction to bring your aesthetic vision to life.", tag: "Fashion" },
     ],
   },
   portfolio: {
@@ -344,7 +344,7 @@ const it: Content = {
       { title: "Organizzazione Eventi", desc: "Checklist, timeline, organizzazione ospiti e supporto personalizzato — io penso ai dettagli, tu goditi il momento.", tag: "Eventi" },
       { title: "Aiuto con le Lingue", desc: "Supporto in italiano, inglese, portoghese, spagnolo e francese — traduzioni, consigli e corsi semplici.", tag: "Lingue" },
       { title: "Cancelleria Digitale", desc: "Planner, template, icone, menu e PDF pensati per essere belli, utili e completamente personalizzabili.", tag: "Prodotti" },
-      { title: "Moda & Direzione Creativa", desc: "Styling, moodboard e direzione creativa completa — con un background in teatro, danza e moda.", tag: "Moda" },
+      { title: "Moda & Direzione Creativa", desc: "Styling, moodboard e direzione creativa completa per dare vita alla tua visione estetica.", tag: "Moda" },
     ],
   },
   portfolio: {
@@ -537,7 +537,7 @@ const pt: Content = {
       { title: "Planejar Eventos", desc: "Checklists, cronogramas, organização de convidados e suporte personalizado — eu cuido dos detalhes, você aproveita o momento.", tag: "Eventos" },
       { title: "Ajuda com Línguas", desc: "Suporte em italiano, inglês, português, espanhol e francês — traduções, dicas e cursos simples.", tag: "Línguas" },
       { title: "Papelaria Digital", desc: "Planners, templates, ícones, cardápios e PDFs feitos para serem bonitos, úteis e totalmente personalizáveis.", tag: "Produtos" },
-      { title: "Moda & Direção Criativa", desc: "Styling, moodboards e direção criativa completa — com bagagem em teatro, dança e moda.", tag: "Moda" },
+      { title: "Moda & Direção Criativa", desc: "Styling, moodboards e direção criativa completa para dar vida à sua visão estética.", tag: "Moda" },
     ],
   },
   portfolio: {
@@ -730,7 +730,7 @@ const fr: Content = {
       { title: "Organisation d'Événements", desc: "Checklists, plannings, organisation des invités et accompagnement personnalisé — je gère les détails, vous profitez du moment.", tag: "Événements" },
       { title: "Aide aux Langues", desc: "Support en italien, anglais, portugais, espagnol et français — traductions, conseils et cours simples.", tag: "Langues" },
       { title: "Papeterie Numérique", desc: "Agendas, templates, icônes, menus et PDF conçus pour être beaux, utiles et entièrement personnalisables.", tag: "Produits" },
-      { title: "Mode & Direction Créative", desc: "Stylisme, moodboards et direction créative complète — issus d'une formation en théâtre, danse et mode.", tag: "Mode" },
+      { title: "Mode & Direction Créative", desc: "Stylisme, moodboards et direction créative complète pour donner vie à votre vision esthétique.", tag: "Mode" },
     ],
   },
   portfolio: {
@@ -923,7 +923,7 @@ const es: Content = {
       { title: "Organización de Eventos", desc: "Checklists, cronogramas, organización de invitados y apoyo personalizado — yo cuido los detalles, tú disfrutas el momento.", tag: "Eventos" },
       { title: "Ayuda con Idiomas", desc: "Apoyo en italiano, inglés, portugués, español y francés — traducciones, consejos y cursos sencillos.", tag: "Idiomas" },
       { title: "Papelería Digital", desc: "Planners, plantillas, iconos, menús y PDFs diseñados para ser bonitos, útiles y totalmente personalizables.", tag: "Productos" },
-      { title: "Moda & Dirección Creativa", desc: "Estilismo, moodboards y dirección creativa completa — con formación en teatro, danza y moda.", tag: "Moda" },
+      { title: "Moda & Dirección Creativa", desc: "Estilismo, moodboards y dirección creativa completa para dar vida a tu visión estética.", tag: "Moda" },
     ],
   },
   portfolio: {
