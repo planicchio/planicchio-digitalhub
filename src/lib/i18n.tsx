@@ -157,7 +157,7 @@ const en: Content = {
   portfolio: {
     eyebrow: "Portfolio",
     title: "Selected work & inspiration",
-    sub: "A living gallery — videos and case studies dropping soon.",
+    sub: "A living gallery of videos, editorials and case studies.",
     filters: ["All", "Branding", "Fashion", "Social", "Before / After"],
     reels: "Reels preview",
     items: [
@@ -219,7 +219,7 @@ const en: Content = {
     eyebrow: "Digital Goods",
     title: "A beautiful visual catalogue",
     sub: "Everything online — and everything personalisable for you.",
-    shop: "Shop opening soon",
+    shop: "Shop now open",
     personalize: "Every product is fully personalisable — just €2 each.",
     featured: {
       badge: "Fixed product",
@@ -350,7 +350,7 @@ const it: Content = {
   portfolio: {
     eyebrow: "Portfolio",
     title: "Lavori selezionati & ispirazione",
-    sub: "Una galleria viva — video e case study in arrivo.",
+    sub: "Una galleria viva di video, editoriali e case study.",
     filters: ["Tutti", "Branding", "Moda", "Social", "Prima / Dopo"],
     reels: "Anteprima reels",
     items: [
@@ -412,7 +412,7 @@ const it: Content = {
     eyebrow: "Prodotti Digitali",
     title: "Un catalogo visivo bellissimo",
     sub: "Tutto online — e tutto personalizzabile per te.",
-    shop: "Shop in apertura",
+    shop: "Shop ora aperto",
     personalize: "Ogni prodotto è completamente personalizzabile — solo €2 ciascuno.",
     featured: {
       badge: "Prodotto fisso",
@@ -543,7 +543,7 @@ const pt: Content = {
   portfolio: {
     eyebrow: "Portfólio",
     title: "Trabalhos selecionados & inspiração",
-    sub: "Uma galeria viva — vídeos e cases chegando em breve.",
+    sub: "Uma galeria viva de vídeos, editoriais e cases.",
     filters: ["Tudo", "Branding", "Moda", "Social", "Antes / Depois"],
     reels: "Prévia dos reels",
     items: [
@@ -605,7 +605,7 @@ const pt: Content = {
     eyebrow: "Produtos Digitais",
     title: "Um catálogo visual lindo",
     sub: "Tudo online — e tudo personalizável para você.",
-    shop: "Loja abrindo em breve",
+    shop: "Loja aberta",
     personalize: "Cada produto é totalmente personalizável — apenas €2 cada.",
     featured: {
       badge: "Produto fixo",
@@ -736,7 +736,7 @@ const fr: Content = {
   portfolio: {
     eyebrow: "Portfolio",
     title: "Travaux sélectionnés & inspiration",
-    sub: "Une galerie vivante — vidéos et études de cas à venir.",
+    sub: "Une galerie vivante de vidéos, éditoriaux et études de cas.",
     filters: ["Tout", "Branding", "Mode", "Social", "Avant / Après"],
     reels: "Aperçu des reels",
     items: [
@@ -798,7 +798,7 @@ const fr: Content = {
     eyebrow: "Produits Numériques",
     title: "Un magnifique catalogue visuel",
     sub: "Tout en ligne — et tout personnalisable pour vous.",
-    shop: "Boutique bientôt ouverte",
+    shop: "Boutique ouverte",
     personalize: "Chaque produit est entièrement personnalisable — seulement 2 € pièce.",
     featured: {
       badge: "Produit fixe",
