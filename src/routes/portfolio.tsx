@@ -4,6 +4,10 @@ import { motion, AnimatePresence } from "motion/react";
 import { Play, ArrowUpRight, FileText } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
+import { UgcFeed } from "@/components/UgcFeed";
+
+// Replace with your Canva PDF portfolio link (Share → Public link)
+const UGC_PORTFOLIO_PDF = "https://www.canva.com/design/DAG9wZePsWg/SgdvxS8jUg7KAE7-3LIppA/view";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
