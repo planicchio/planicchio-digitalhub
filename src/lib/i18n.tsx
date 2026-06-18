@@ -929,7 +929,7 @@ const es: Content = {
   portfolio: {
     eyebrow: "Portfolio",
     title: "Trabajos seleccionados & inspiración",
-    sub: "Una galería viva — vídeos y casos de estudio muy pronto.",
+    sub: "Una galería viva de vídeos, editoriales y casos de estudio.",
     filters: ["Todo", "Branding", "Moda", "Social", "Antes / Después"],
     reels: "Vista previa de reels",
     items: [
@@ -991,7 +991,7 @@ const es: Content = {
     eyebrow: "Productos Digitales",
     title: "Un catálogo visual precioso",
     sub: "Todo online — y todo personalizable para ti.",
-    shop: "Tienda abriendo pronto",
+    shop: "Tienda abierta",
     personalize: "Cada producto es totalmente personalizable — solo €2 cada uno.",
     featured: {
       badge: "Producto fijo",
