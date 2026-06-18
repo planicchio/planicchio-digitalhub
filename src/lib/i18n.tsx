@@ -151,13 +151,13 @@ const en: Content = {
       { title: "Event Planning", desc: "Checklists, timelines, guest organisation and personalised support — I plan the details, you enjoy the moment.", tag: "Events" },
       { title: "Languages Help", desc: "Support in Italian, English, Portuguese, Spanish and French — translations, tips and simple courses.", tag: "Languages" },
       { title: "Digital Stationery", desc: "Planners, templates, icons, menus and PDFs designed to be beautiful, useful and fully personalisable.", tag: "Products" },
-      { title: "Fashion & Creative Direction", desc: "Styling, moodboards and full creative direction — drawing on a background in theatre, dance and fashion.", tag: "Fashion" },
+      { title: "Fashion & Creative Direction", desc: "Styling, moodboards and full creative direction to bring your aesthetic vision to life.", tag: "Fashion" },
     ],
   },
   portfolio: {
     eyebrow: "Portfolio",
     title: "Selected work & inspiration",
-    sub: "A living gallery — videos and case studies dropping soon.",
+    sub: "A living gallery of videos, editorials and case studies.",
     filters: ["All", "Branding", "Fashion", "Social", "Before / After"],
     reels: "Reels preview",
     items: [
@@ -219,7 +219,7 @@ const en: Content = {
     eyebrow: "Digital Goods",
     title: "A beautiful visual catalogue",
     sub: "Everything online — and everything personalisable for you.",
-    shop: "Shop opening soon",
+    shop: "Shop now open",
     personalize: "Every product is fully personalisable — just €2 each.",
     featured: {
       badge: "Fixed product",
@@ -344,13 +344,13 @@ const it: Content = {
       { title: "Organizzazione Eventi", desc: "Checklist, timeline, organizzazione ospiti e supporto personalizzato — io penso ai dettagli, tu goditi il momento.", tag: "Eventi" },
       { title: "Aiuto con le Lingue", desc: "Supporto in italiano, inglese, portoghese, spagnolo e francese — traduzioni, consigli e corsi semplici.", tag: "Lingue" },
       { title: "Cancelleria Digitale", desc: "Planner, template, icone, menu e PDF pensati per essere belli, utili e completamente personalizzabili.", tag: "Prodotti" },
-      { title: "Moda & Direzione Creativa", desc: "Styling, moodboard e direzione creativa completa — con un background in teatro, danza e moda.", tag: "Moda" },
+      { title: "Moda & Direzione Creativa", desc: "Styling, moodboard e direzione creativa completa per dare vita alla tua visione estetica.", tag: "Moda" },
     ],
   },
   portfolio: {
     eyebrow: "Portfolio",
     title: "Lavori selezionati & ispirazione",
-    sub: "Una galleria viva — video e case study in arrivo.",
+    sub: "Una galleria viva di video, editoriali e case study.",
     filters: ["Tutti", "Branding", "Moda", "Social", "Prima / Dopo"],
     reels: "Anteprima reels",
     items: [
@@ -412,7 +412,7 @@ const it: Content = {
     eyebrow: "Prodotti Digitali",
     title: "Un catalogo visivo bellissimo",
     sub: "Tutto online — e tutto personalizzabile per te.",
-    shop: "Shop in apertura",
+    shop: "Shop ora aperto",
     personalize: "Ogni prodotto è completamente personalizzabile — solo €2 ciascuno.",
     featured: {
       badge: "Prodotto fisso",
@@ -537,13 +537,13 @@ const pt: Content = {
       { title: "Planejar Eventos", desc: "Checklists, cronogramas, organização de convidados e suporte personalizado — eu cuido dos detalhes, você aproveita o momento.", tag: "Eventos" },
       { title: "Ajuda com Línguas", desc: "Suporte em italiano, inglês, português, espanhol e francês — traduções, dicas e cursos simples.", tag: "Línguas" },
       { title: "Papelaria Digital", desc: "Planners, templates, ícones, cardápios e PDFs feitos para serem bonitos, úteis e totalmente personalizáveis.", tag: "Produtos" },
-      { title: "Moda & Direção Criativa", desc: "Styling, moodboards e direção criativa completa — com bagagem em teatro, dança e moda.", tag: "Moda" },
+      { title: "Moda & Direção Criativa", desc: "Styling, moodboards e direção criativa completa para dar vida à sua visão estética.", tag: "Moda" },
     ],
   },
   portfolio: {
     eyebrow: "Portfólio",
     title: "Trabalhos selecionados & inspiração",
-    sub: "Uma galeria viva — vídeos e cases chegando em breve.",
+    sub: "Uma galeria viva de vídeos, editoriais e cases.",
     filters: ["Tudo", "Branding", "Moda", "Social", "Antes / Depois"],
     reels: "Prévia dos reels",
     items: [
@@ -605,7 +605,7 @@ const pt: Content = {
     eyebrow: "Produtos Digitais",
     title: "Um catálogo visual lindo",
     sub: "Tudo online — e tudo personalizável para você.",
-    shop: "Loja abrindo em breve",
+    shop: "Loja aberta",
     personalize: "Cada produto é totalmente personalizável — apenas €2 cada.",
     featured: {
       badge: "Produto fixo",
@@ -730,13 +730,13 @@ const fr: Content = {
       { title: "Organisation d'Événements", desc: "Checklists, plannings, organisation des invités et accompagnement personnalisé — je gère les détails, vous profitez du moment.", tag: "Événements" },
       { title: "Aide aux Langues", desc: "Support en italien, anglais, portugais, espagnol et français — traductions, conseils et cours simples.", tag: "Langues" },
       { title: "Papeterie Numérique", desc: "Agendas, templates, icônes, menus et PDF conçus pour être beaux, utiles et entièrement personnalisables.", tag: "Produits" },
-      { title: "Mode & Direction Créative", desc: "Stylisme, moodboards et direction créative complète — issus d'une formation en théâtre, danse et mode.", tag: "Mode" },
+      { title: "Mode & Direction Créative", desc: "Stylisme, moodboards et direction créative complète pour donner vie à votre vision esthétique.", tag: "Mode" },
     ],
   },
   portfolio: {
     eyebrow: "Portfolio",
     title: "Travaux sélectionnés & inspiration",
-    sub: "Une galerie vivante — vidéos et études de cas à venir.",
+    sub: "Une galerie vivante de vidéos, éditoriaux et études de cas.",
     filters: ["Tout", "Branding", "Mode", "Social", "Avant / Après"],
     reels: "Aperçu des reels",
     items: [
@@ -798,7 +798,7 @@ const fr: Content = {
     eyebrow: "Produits Numériques",
     title: "Un magnifique catalogue visuel",
     sub: "Tout en ligne — et tout personnalisable pour vous.",
-    shop: "Boutique bientôt ouverte",
+    shop: "Boutique ouverte",
     personalize: "Chaque produit est entièrement personnalisable — seulement 2 € pièce.",
     featured: {
       badge: "Produit fixe",
@@ -923,13 +923,13 @@ const es: Content = {
       { title: "Organización de Eventos", desc: "Checklists, cronogramas, organización de invitados y apoyo personalizado — yo cuido los detalles, tú disfrutas el momento.", tag: "Eventos" },
       { title: "Ayuda con Idiomas", desc: "Apoyo en italiano, inglés, portugués, español y francés — traducciones, consejos y cursos sencillos.", tag: "Idiomas" },
       { title: "Papelería Digital", desc: "Planners, plantillas, iconos, menús y PDFs diseñados para ser bonitos, útiles y totalmente personalizables.", tag: "Productos" },
-      { title: "Moda & Dirección Creativa", desc: "Estilismo, moodboards y dirección creativa completa — con formación en teatro, danza y moda.", tag: "Moda" },
+      { title: "Moda & Dirección Creativa", desc: "Estilismo, moodboards y dirección creativa completa para dar vida a tu visión estética.", tag: "Moda" },
     ],
   },
   portfolio: {
     eyebrow: "Portfolio",
     title: "Trabajos seleccionados & inspiración",
-    sub: "Una galería viva — vídeos y casos de estudio muy pronto.",
+    sub: "Una galería viva de vídeos, editoriales y casos de estudio.",
     filters: ["Todo", "Branding", "Moda", "Social", "Antes / Después"],
     reels: "Vista previa de reels",
     items: [
@@ -991,7 +991,7 @@ const es: Content = {
     eyebrow: "Productos Digitales",
     title: "Un catálogo visual precioso",
     sub: "Todo online — y todo personalizable para ti.",
-    shop: "Tienda abriendo pronto",
+    shop: "Tienda abierta",
     personalize: "Cada producto es totalmente personalizable — solo €2 cada uno.",
     featured: {
       badge: "Producto fijo",
