@@ -2,13 +2,16 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Pencil } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
-import branding from "@/assets/branding.png.asset.json";
-import eventflyer from "@/assets/eventflyer.png.asset.json";
 
-const serviceImages: Record<number, string> = {
-  0: branding.url,
-  3: eventflyer.url,
-};
+const serviceGradients = [
+  "from-primary/30 via-secondary to-muted",
+  "from-ink/80 via-primary/30 to-secondary",
+  "from-secondary via-muted to-primary/25",
+  "from-primary/25 via-secondary to-ink/40",
+  "from-muted via-secondary to-primary/30",
+  "from-primary/35 via-muted to-secondary",
+  "from-ink/50 via-primary/25 to-secondary",
+];
 
 export const Route = createFileRoute("/services")({
   head: () => ({
