@@ -4,7 +4,7 @@ import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
 import { UgcFeed } from "@/components/UgcFeed";
 
-const UGC_PORTFOLIO_PDF = "/portfolio_ana_20260619_004413_0000_(1).pdf";
+const UGC_PORTFOLIO_URL = "https://planicchiobrandingandmarketing.my.canva.site/portfolio-ana-botelho";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -32,7 +32,7 @@ function Portfolio() {
 
         <Reveal delay={0.1} className="mt-10 flex flex-wrap gap-4">
           <a
-            href={UGC_PORTFOLIO_PDF}
+            href={UGC_PORTFOLIO_URL}
             target="_blank"
             rel="noreferrer"
             className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"
@@ -72,7 +72,7 @@ function Portfolio() {
 
           <Reveal delay={0.1} className="mt-12 flex flex-wrap gap-4">
             <a
-              href={UGC_PORTFOLIO_PDF}
+              href={UGC_PORTFOLIO_URL}
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.03]"

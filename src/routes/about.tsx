@@ -1,8 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
-import about from "@/assets/about.jpg";
+
+const BIO_LINK = "https://planicchiobrandingandmarketing.my.canva.site/bio-link-planicchio-all-services";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -11,7 +12,6 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "The creative vision behind Planicchio: fashion, branding and digital culture, multilingual and internet-native, based in Italy." },
       { property: "og:title", content: "About Planicchio" },
       { property: "og:description", content: "A creative vision built for the internet age." },
-      { property: "og:image", content: about },
     ],
   }),
   component: About,
@@ -31,8 +31,23 @@ function About() {
 
         <div className="mt-14 grid gap-10 lg:grid-cols-2">
           <Reveal>
-            <div className="overflow-hidden rounded-3xl">
-              <img src={about} alt="Ana Júlia Botelho, founder of Planicchio" loading="lazy" width={1200} height={1500} className="h-full w-full object-cover" />
+            <div className="flex flex-col gap-5">
+              <div className="overflow-hidden rounded-3xl border border-border bg-card">
+                <img
+                  src="/about_us copy copy.webp"
+                  alt="About Planicchio"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="flex items-center justify-center rounded-2xl border border-border bg-card p-6">
+                <img
+                  src="/planicchio copy.jpg"
+                  alt="Planicchio logo"
+                  loading="lazy"
+                  className="h-20 w-auto object-contain"
+                />
+              </div>
             </div>
           </Reveal>
           <Reveal delay={0.1} className="flex flex-col justify-center gap-6 text-lg text-muted-foreground">
@@ -44,9 +59,19 @@ function About() {
               <p key={p}>{p}</p>
             ))}
             <p className="font-display text-xl italic text-foreground">{c.about.closing}</p>
-            <Link to="/services" className="inline-flex items-center gap-2 text-base font-medium text-primary hover:underline">
-              {c.cta.discover} <ArrowUpRight className="h-4 w-4" />
-            </Link>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/services" className="inline-flex items-center gap-2 text-base font-medium text-primary hover:underline">
+                {c.cta.discover} <ArrowUpRight className="h-4 w-4" />
+              </Link>
+              <a
+                href={BIO_LINK}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
+              >
+                Saiba mais <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>
