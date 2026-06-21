@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { ArrowUpRight, ArrowDown } from "lucide-react";
@@ -6,20 +6,7 @@ import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
 import hero from "@/assets/hero.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Planicchio — Creative Studio · Fashion · Digital" },
-      { name: "description", content: "Planicchio is a creative studio blending branding, content, fashion direction and internet culture. Based in Italy." },
-      { property: "og:title", content: "Planicchio — Creative Studio" },
-      { property: "og:description", content: "Branding, content & fashion direction for brands that want to feel alive online." },
-      { property: "og:image", content: hero },
-    ],
-  }),
-  component: Home,
-});
-
-function Home() {
+export function IndexPage() {
   const { c } = useLang();
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
@@ -28,7 +15,6 @@ function Home() {
 
   const services = c.services.items.slice(0, 6);
   const exploreLinks = ["/app", "/services", "/portfolio", "/products", "/services", "/services"] as const;
-
 
   return (
     <>
@@ -93,7 +79,6 @@ function Home() {
           >
             {c.hero.desc}
           </motion.p>
-
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}

@@ -1,24 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, FileText } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
-import { UgcFeed } from "@/components/UgcFeed";
 
 const UGC_PORTFOLIO_URL = "https://planicchiobrandingandmarketing.my.canva.site/portfolio-ana-botelho";
 
-export const Route = createFileRoute("/portfolio")({
-  head: () => ({
-    meta: [
-      { title: "Portfolio — Planicchio" },
-      { name: "description", content: "Selected creative work: branding, fashion editorials, social campaigns and before/after showcases." },
-      { property: "og:title", content: "Portfolio — Planicchio" },
-      { property: "og:description", content: "A living gallery of creative work and inspiration." },
-    ],
-  }),
-  component: Portfolio,
-});
-
-function Portfolio() {
+export function PortfolioPage() {
   const { c } = useLang();
 
   return (
@@ -68,9 +54,7 @@ function Portfolio() {
             ))}
           </Reveal>
 
-          <UgcFeed />
-
-          <Reveal delay={0.1} className="mt-12 flex flex-wrap gap-4">
+          <Reveal delay={0.15} className="mt-12 flex flex-wrap gap-4">
             <a
               href={UGC_PORTFOLIO_URL}
               target="_blank"

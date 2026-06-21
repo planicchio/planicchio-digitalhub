@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Instagram, Mail, ArrowUpRight, Check, Youtube, Facebook, Music2, Bookmark } from "lucide-react";
 import { useLang } from "@/lib/i18n";
@@ -12,19 +11,7 @@ const socials = [
   { name: "YouTube", icon: Youtube, url: "https://youtube.com/@planicchio" },
 ];
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title: "Contact — Planicchio" },
-      { name: "description", content: "Collaborations, work inquiries and good ideas. Reach Planicchio via Instagram, email or the contact form." },
-      { property: "og:title", content: "Contact — Planicchio" },
-      { property: "og:description", content: "Let's create something iconic together." },
-    ],
-  }),
-  component: Contact,
-});
-
-function Contact() {
+export function ContactPage() {
   const { c } = useLang();
   const [sent, setSent] = useState(false);
 

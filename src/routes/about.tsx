@@ -1,23 +1,11 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
 
 const BIO_LINK = "https://planicchiobrandingandmarketing.my.canva.site/bio-link-planicchio-all-services";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About — Planicchio" },
-      { name: "description", content: "The creative vision behind Planicchio: fashion, branding and digital culture, multilingual and internet-native, based in Italy." },
-      { property: "og:title", content: "About Planicchio" },
-      { property: "og:description", content: "A creative vision built for the internet age." },
-    ],
-  }),
-  component: About,
-});
-
-function About() {
+export function AboutPage() {
   const { c } = useLang();
   return (
     <div className="pt-28">
