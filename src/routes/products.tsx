@@ -1,3 +1,4 @@
+import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, ShoppingBag, Sparkles, BookOpen, BookMarked, SquareCheck as CheckSquare, Smartphone, LayoutGrid as Layout, Star, Grid2x2, Coffee, Map, Brush, FileText, Wand as Wand2 } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
@@ -10,7 +11,19 @@ const productIcons = [
   Map, Brush, FileText, Wand2,
 ];
 
-export function ProductsPage() {
+export const Route = createFileRoute("/products")({
+  head: () => ({
+    meta: [
+      { title: "Digital Products — Planicchio" },
+      { name: "description", content: "Planners, icons, templates, menus, checklists, wallpapers, coloring books and more — all online, all personalisable, just €2 each." },
+      { property: "og:title", content: "Digital Products — Planicchio" },
+      { property: "og:description", content: "Tools to organise your creative life — everything online and personalisable." },
+    ],
+  }),
+  component: Products,
+});
+
+function Products() {
   const { c } = useLang();
   return (
     <div className="pt-28">

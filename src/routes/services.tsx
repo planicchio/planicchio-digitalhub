@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Palette, Camera, Headphones, CalendarDays, Globe, BookOpen, Sparkles, ExternalLink } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
@@ -11,7 +11,19 @@ const serviceInfoLinks: Record<number, string> = {
   3: "https://planicchiobrandingandmarketing.my.canva.site/virtual-assistance-and-events-planner-planicchio",
 };
 
-export function ServicesPage() {
+export const Route = createFileRoute("/services")({
+  head: () => ({
+    meta: [
+      { title: "Services — Planicchio" },
+      { name: "description", content: "Branding, UGC, photography, virtual assistance, events, language classes, digital stationery and fashion direction." },
+      { property: "og:title", content: "Services — Planicchio" },
+      { property: "og:description", content: "Everything your brand needs to shine." },
+    ],
+  }),
+  component: Services,
+});
+
+function Services() {
   const { c } = useLang();
   return (
     <div className="pt-28">
