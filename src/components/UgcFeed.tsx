@@ -1,14 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { Heart, Volume2, VolumeX, Play } from "lucide-react";
-import ugc1 from "@/assets/ugc1.mp4.asset.json";
-import ugc2 from "@/assets/ugc2.mp4.asset.json";
 import ugc3 from "@/assets/ugc3.mp4.asset.json";
 
 type Clip = { src: string; tag: string };
 
 const clips: Clip[] = [
-  { src: ugc1.url, tag: "Lifestyle" },
-  { src: ugc2.url, tag: "Fashion" },
   { src: ugc3.url, tag: "UGC" },
 ];
 
